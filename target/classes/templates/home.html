@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>صفحه اصلی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            margin-bottom: 1rem;
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar a:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 2rem;
+        }
+        .main h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .main p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>سامانه من</h1>
+        <div>
+            <a href="/login">ورود</a>
+            <a href="/signup">ثبت‌نام</a>
+        </div>
+    </div>
+
+    <!-- Layout -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="/">صفحه اصلی</a>
+            <a href="/login">ورود</a>
+            <a href="/signup">ثبت‌نام</a>
+            <a href="#">درباره ما</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <h2>خوش آمدید!</h2>
+            <p>
+                به سامانه ساده و زیبا خوش آمدید. از طریق نوار کناری می‌توانید به صفحات مختلف دسترسی داشته باشید.
+                برای ورود یا ثبت‌نام از گزینه‌های بالا یا سمت راست استفاده کنید.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © تمامی حقوق محفوظ است - ۲۰۲۵
+    </div>
+
+</body>
+</html>
